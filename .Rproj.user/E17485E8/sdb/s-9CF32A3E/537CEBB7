@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Hemocrit levels\n#' \n#' A data set of ficticional cyclists who might be doping. The predictor covariate\n#' is the hemocrit level, or the volume percentage of the blood that is red\n#' blood cells.  The higher the level, the better the athlete performs at\n#' endurance sports. The amount is typically around 45 for healthy adult males\n#' and around 40 for healthy adult females.\n#' @format A data frame with 200 observations, with two columns \n#' \\describe{\n#'    \\item{hemocrit}{The riders hemocrit level.}\n#'    \\item{status}{Whether the rider was \"clean\" or a \"cheater\".}}\n#' @examples \n#' ggplot(Hemocrit, aes(x=hemocrit, y=status)) + geom_point()\n\"Hemocrit\"\n\n# set.seed(345)\n# clean <- data.frame(hemocrit=c(rnorm(190, mean=48, sd=1)),\n#                     status = rep('Clean',190))\n# doper <- data.frame(hemocrit=c(rnorm(10, mean=50, sd=1)),\n#                     status = rep('Cheat',10))\n# Hemocrit <- rbind(clean, doper)\n# save(Hemocrit, file='../data/Hemocrit.rdata')\n",
+    "created" : 1443479641137.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3268787384",
+    "id" : "537CEBB7",
+    "lastKnownWriteTime" : 1443479707,
+    "path" : "~/GitHub/MyDataSets/R/Hemocrit.R",
+    "project_path" : "R/Hemocrit.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
