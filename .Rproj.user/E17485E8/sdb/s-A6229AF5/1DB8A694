@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Manufacturing data on how long it takes to polish a dish \n#' \n#' This data describes the final step in processing dishes\n#' before the are packaged and sold. The polishing time could\n#' depend on the size of the dish, the price that it will be sold\n#' at, and the type of dish.\n#' @format A data frame with 58 rows and 4 variables:\n#' \\describe{\n#'   \\item{Diameter}{The diameter of the dish.}\n#'   \\item{Time}{The amount of time necessary to polish the dish.}\n#'   \\item{Price}{How much the dish will sell for.}\n#'   \\item{Type}{The type of dish: Casserole, Bowl, Dish, Tray, or Plate}\n#' }\n\"Dishes\"\n\n",
+    "created" : 1444950690914.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1417471898",
+    "id" : "1DB8A694",
+    "lastKnownWriteTime" : 1444951403,
+    "path" : "~/GitHub/dsData/R/Polishing.R",
+    "project_path" : "R/Polishing.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
