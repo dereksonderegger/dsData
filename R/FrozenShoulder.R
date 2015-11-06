@@ -25,6 +25,7 @@
 "Frozen"
 
 ### How I created the data
+# library(dplyr)
 # Frozen <- expand.grid(Med=c('None','Shot','Mult_Shot'),
 #                       Manip = c('None','PT','PT+M'),
 #                       rep=1:5)
@@ -35,6 +36,7 @@
 # #         Int  S1   S3   Pt  PTM  S1:Pt S3:Pt S1:PtM  S3:PtM
 # beta <- c( 0, +10, +15, +10, +15,  +5,   +8,    +7,    +10 )
 # Frozen$delta <- X %*% beta + rnorm(nrow(X), sd=7)
+# Frozen <- Frozen %>% select(Med, Manip, delta)
 # 
 # m <- lm( delta ~ Med * Manip, data=Frozen)
 # anova(m)
@@ -42,4 +44,4 @@
 # ggplot(Frozen, aes(x=Manip, y=delta, color=Med)) +
 #   geom_point() +
 #   geom_line(aes(y=yhat, x=as.integer(Manip)))
-# save(Frozen, file='../data/Frozen.rdata')
+# save(Frozen, file='data/Frozen.rdata')
