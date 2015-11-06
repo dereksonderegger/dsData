@@ -38,6 +38,6 @@
 # PlantNutrients <- data.frame(PlantNutrients)
 # X <- model.matrix(~N + P + I(P^2) + K, data=PlantNutrients)
 # beta <- c( 20, 1, .8, -.004, .1)
-# PlantNutrients$Harvest <- X %*% beta
+# PlantNutrients$Harvest <- (X %*% beta)[,1]
 # PlantNutrients <- PlantNutrients %>% dplyr::select(Harvest, N, P, K)
-# save(PlantNutrients, file = '../data/PlantNutrients.rdata')
+# save(PlantNutrients, file = './data/PlantNutrients.rdata')

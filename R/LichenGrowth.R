@@ -20,9 +20,9 @@
 # LichenGrowth <- expand.grid(Species=c('A','B','C'), Water=seq(0,1,length=n))
 # X <- model.matrix( ~ Species + Water, data=LichenGrowth ) 
 # beta <- c(1, -2, 1, 5) 
-# LichenGrowth$Growth <- 10 ^ ( (X %*% beta + rnorm(n, sd=.5))*.2 ) 
+# LichenGrowth$Growth <- 10 ^ ( (X %*% beta + rnorm(n, sd=.5))*.2 )[,1] 
 # ggplot(LichenGrowth, aes(x=Water, y=Growth, color=Species)) + geom_point()
 # model <- lm( Growth ~ Water + Species, data=LichenGrowth)
 # library(MASS)
 # boxcox(model)
-# save(LichenGrowth, file='../data/LichenGrowth.rdata')
+# save(LichenGrowth, file='./data/LichenGrowth.rdata')
