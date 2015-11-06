@@ -1,8 +1,13 @@
 #' Simulated Lichen Growth
 #' 
-#' At 20 different site, 100 seedlings were planted. Two watering treatments    
+#' A study was performed examining the amount of growth
+#' over a season relative to the amount of water available. 
 #' 
-#' #' @format A data frame with 36 rows and 2 variables:
+#' Confession: I didn't spend the time
+#' to get the scale for the water or for growth to 
+#' be biologically correct for how they actually get measured.
+#' 
+#' @format A data frame with 60 rows and 3 variables:
 #' \describe{
 #'   \item{Species}{Lichen Species}
 #'   \item{Water}{A normalized measure of water availability (bigger is more water)}
