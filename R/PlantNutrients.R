@@ -3,7 +3,7 @@
 #' The study is an observational study looking at the Nitrogen,
 #' Phosporus, and Potassium levels in 50 plots and along with the
 #' harvest amounts for those plots. 
-#' @format A data frame with 21 rows and 2 variables:
+#' @format A data frame with 50 rows and 4 variables:
 #' \describe{
 #'   \item{Harvest}{The number of bushels harvested for the plot}
 #'   \item{N}{Nitrogen concentration (in ppm)}
