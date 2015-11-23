@@ -16,8 +16,9 @@ HierarchicalData
 }
 \description{
 This data is simulated an experiment that has some
-hierachical nesting. This is a plant response experiment
-where there are 9 rings, three of which
+hierachical nesting and the treatment is not applied at
+the observation level, but rather at some higher blocking level.
+This is a plant response experiment where there are 9 rings, three of which
 are randomly assigned to treatment A, three assigned to
 treatment B and the final 3 to treatment C. Within each
 ring, we observe six individual plants. So we have 6*9=54
