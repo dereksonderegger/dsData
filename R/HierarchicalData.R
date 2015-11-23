@@ -27,7 +27,8 @@
 # library(dplyr)
 # data <- expand.grid(Trt=c('A','B','C'), Plot=1:3, rep=1:6) %>%
 #   mutate( Ring = factor( as.integer(interaction(Plot,Trt))) ) %>%
-#   arrange(Trt, Plot, rep)
+#   select( Trt, Ring, rep) %>%
+#   arrange(Ring, rep)
 # X <- model.matrix(~ Trt, data)
 # Z <- model.matrix(~ Ring, data)
 # beta    <- c(200, 40, 30)
@@ -35,5 +36,5 @@
 # epsilon <- rnorm( nrow(X), sd=30 )
 # data$y <- X%*%beta + Z%*%gamma + epsilon
 # HierarchicalData <- data
-# save(HierarchicalData, file = './data/HierarchicalData.rdata')
+# save(HierarchicalData, file = '../data/HierarchicalData.rdata')
 
