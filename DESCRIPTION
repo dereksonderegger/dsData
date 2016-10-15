@@ -1,9 +1,11 @@
-Package: dsData 
+Package: dsData
 Title: Fictitious Datasets for Teaching
 Version: 0.1.1
 Authors@R: "Derek Sonderegger <derek.sonderegger@nau.edu> [aut, cre]"
 Description: These are a collection of data sets used for homework and exams.
-Depends: R (>= 2.9.0),
+Depends:
+    R (>= 2.9.0),
 Suggests:
 License: GPL 3
 LazyData: TRUE
+RoxygenNote: 5.0.1

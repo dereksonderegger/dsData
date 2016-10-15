@@ -1,4 +1,0 @@
-load("/Users/dls354/GitHub/STA_575_R_Code/data/Eden.rdata")
-Eden
-load("/Users/dls354/GitHub/DataSets/data/Bird.Detections.rdata")
-Bird.Detections
