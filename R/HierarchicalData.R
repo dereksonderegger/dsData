@@ -32,10 +32,13 @@
 #   arrange(Ring, rep)
 # X <- model.matrix(~ Trt, data)
 # Z <- model.matrix(~ Ring, data)
-# beta    <- c(200, 40, 30)
+# beta    <- c(300, -70, -80)
 # gamma   <- rnorm( ncol(Z), sd=20 )
 # epsilon <- rnorm( nrow(X), sd=30 )
 # data$y <- as.vector( X%*%beta + Z%*%gamma + epsilon )
 # HierarchicalData <- data
 # save(HierarchicalData, file = '../data/HierarchicalData.rdata')
+# 
+# model <- lmer(y ~ Trt + (1|Ring), data=HierarchicalData)
+# car::Anova(model, type=3)
 
