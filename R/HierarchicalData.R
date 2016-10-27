@@ -23,9 +23,9 @@
 #'   geom_point()
 "HierarchicalData"
 
-
 # set.seed(34674)
 # library(dplyr)
+# library(devtools)
 # data <- expand.grid(Trt=c('A','B','C'), Plot=1:3, rep=1:6) %>%
 #   mutate( Ring = factor( as.integer(interaction(Plot,Trt))) ) %>%
 #   dplyr::select( Trt, Ring, rep) %>%
@@ -37,7 +37,7 @@
 # epsilon <- rnorm( nrow(X), sd=30 )
 # data$y <- as.vector( X%*%beta + Z%*%gamma + epsilon )
 # HierarchicalData <- data
-# save(HierarchicalData, file = '../data/HierarchicalData.rdata')
+# use_data(HierarchicalData)
 # 
 # model <- lmer(y ~ Trt + (1|Ring), data=HierarchicalData)
 # car::Anova(model, type=3)
