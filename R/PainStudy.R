@@ -23,31 +23,3 @@
 #' }
 "BackPain"
 
-### How I created the data
-# library(dplyr)
-# library(devtools)
-# library(ggplot2)
-# BackPain <- expand.grid(Electro=c('None','Low','High'),
-#                         Lifestyle = c('Passive','PT','Str'),
-#                         rep=1:8)
-# seed <- floor( runif(1, 0, 1000) )
-# set.seed(seed)
-# set.seed(862)
-# X <- model.matrix(~ Electro * Lifestyle, data=BackPain)
-# #         Int  Low High   Pt  Str  Low:Pt High:Pt  Low:Str  High:Str
-# beta <- c( 0, -10, -18,  -17, -30,  -2,    +0,       +13,     +14 )
-# BackPain$delta <- X %*% beta + rnorm(nrow(X), sd=9)
-# BackPain$delta <- BackPain$delta[,1]
-# BackPain <- BackPain %>% select(Electro, Lifestyle, delta)
-# use_data(BackPain, overwrite=TRUE)
-# 
-# ggplot(BackPain, aes(y=delta, x=Lifestyle, color=Electro)) +
-#   geom_point()
-# 
-# m <- lm( delta ~ Electro * Lifestyle, data=BackPain)
-# anova(m)
-# BackPain$yhat <- predict(m)
-# ggplot(BackPain, aes(y=delta, x=Lifestyle, color=Electro)) +
-#   geom_point() +
-#   geom_line(aes(y=yhat, x=as.integer(Lifestyle)))
-# 
