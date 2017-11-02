@@ -1,4 +1,4 @@
-#' A simulationed dataset about a study relating the age of the patient 
+#' A simulated dataset relating the age of the patient 
 #' and severity of a bone break with duration of the healing time.
 #' 
 #' @format A data frame with 60 observations on the following 3 variables.
