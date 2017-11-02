@@ -12,10 +12,6 @@
 #'     \item{rep}{The replicate number within subplot}
 #'     \item{Irrigation}{The irrigation level of the plot}
 #'     \item{Fertilizer}{The fertilizer level of the subplot}} 
-#' @examples
-#' ggplot(AgData, aes(x=Fertilizer, y=yield, color=Irrigation)) + 
-#'   geom_point() +
-#'   facet_wrap( ~ plot, ncol=4, labeller=label_both)
 "AgData"
 
 # set.seed(345)
@@ -35,4 +31,4 @@
 # data$yield <- as.vector(y)
 # 
 # AgData <- data
-# save(AgData, file='data/AgData.rdata')
+# use_data(AgData, overwrite=TRUE)

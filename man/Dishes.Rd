@@ -21,4 +21,3 @@ depend on the size of the dish, the price that it will be sold
 at, and the type of dish.
 }
 \keyword{datasets}
-

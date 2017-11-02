@@ -10,6 +10,7 @@
 #'    \item{hemocrit}{The riders hemocrit level.}
 #'    \item{status}{Whether the rider was "clean" or a "cheater".}}
 #' @examples 
+#' library(ggplot2)
 #' ggplot(Hemocrit, aes(x=hemocrit, y=status)) + geom_point()
 "Hemocrit"
 

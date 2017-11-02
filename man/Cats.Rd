@@ -18,4 +18,3 @@ A simulated dataset describing how my time my cats spend outside
 relative to the outside temperature.
 }
 \keyword{datasets}
-

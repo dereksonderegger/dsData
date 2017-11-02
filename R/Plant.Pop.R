@@ -12,10 +12,15 @@
 #'   \item{Quadrant}{Which 25x25 quadrant the grid cell is in [a-p].}
 #'   \item{Plot}{Which 10x10 plot the grid cell is in [1-100].}
 #'   \item{Site}{A unique identifier of the 1x1 grid cell [1 - 10,000].}
+#'   \item{count}{The number of plants within a site.}
 #' }
 #' @examples
+#' library(ggplot2)
+#' library(dplyr)
 #' data(Plant.Pop)
-#' ggplot(filter(Plant.Pop, count>=1), aes(x=x, y=y, color=count)) + 
+#' 
+#' NonZero <- Plant.Pop %>% filter( count >= 1 )
+#' ggplot( NonZero, aes(x=x, y=y, color=count)) + 
 #'   geom_point(alpha=.3)
 #' 
 #' # Aggregate over quadrants
@@ -39,10 +44,10 @@
 #'   geom_text(aes(label=Plot))  
 "Plant.Pop"
 
-
+# set.seed(456754)
 # library(spatstat)
 # l <- 100
-# D <- .1 
+# D <- .1
 # x1 <- runifpoint(D/2*l^2, win = owin(c(0,l), c(0,l)))
 # x2 <- rThomas(2*D/10, sigma=2, mu=10, win=owin(c(0,l),c(0,l)))
 # X <- superimpose(x1, x2)
@@ -50,7 +55,7 @@
 # library(ggplot2)
 # library(dplyr)
 # Plant.Pop <- data.frame(x=X$x, y=X$y)
-# ggplot(Plant.Pop, aes(x=x, y=y)) + 
+# ggplot(Plant.Pop, aes(x=x, y=y)) +
 #   geom_point(alpha=.3)
 # 
 # Plant.Pop <- Plant.Pop %>%
@@ -69,7 +74,7 @@
 # Plant.Pop$Quadrant <- interaction(Plant.Pop$group.x, Plant.Pop$group.y)
 # levels(Plant.Pop$Quadrant) <- letters[1:16]
 # 
-# # Define 10x10 plots (100 of these) 
+# # Define 10x10 plots (100 of these)
 # Plant.Pop$group.x <- cut(Plant.Pop$x, breaks = seq(0,100,10), include.lowest=TRUE)
 # Plant.Pop$group.y <- cut(Plant.Pop$y, breaks = seq(0,100,10), include.lowest=TRUE)
 # Plant.Pop$Plot <- interaction(Plant.Pop$group.x, Plant.Pop$group.y)
@@ -81,6 +86,6 @@
 # Plant.Pop <- select(Plant.Pop, x, y, Quadrant, Plot, Site, count)
 # str(Plant.Pop)
 # 
-# save(Plant.Pop, file = '../data/Plant.Pop.rdata')
+# use_data(Plan.Pop, overwrite=TRUE)
 
 

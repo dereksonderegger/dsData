@@ -19,4 +19,3 @@ the bed was harvested (number of passes by a havesting boat) and the Harvest is
 the number of bushels obtained.
 }
 \keyword{datasets}
-

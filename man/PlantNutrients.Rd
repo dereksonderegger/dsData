@@ -20,4 +20,3 @@ Phosporus, and Potassium levels in 50 plots and along with the
 harvest amounts for those plots.
 }
 \keyword{datasets}
-

@@ -23,6 +23,7 @@ Note that any lobster with carapace length less than 3 inches
 is legally required to be released unharmed at its capture site.
 }
 \examples{
+library(ggplot2)
 data(Lobsters)
 # Plot each boats Catch.Weight 
 ggplot(Lobsters, aes(x=Boat.ID, y=Catch.Weight)) + 
@@ -39,4 +40,3 @@ ggplot(Lobsters, aes(x=Catch.Weight, y=Lobster.Length)) +
   geom_point()
 }
 \keyword{datasets}
-

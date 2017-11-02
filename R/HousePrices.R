@@ -17,11 +17,12 @@
 ### How I created the .RData file
 # library(dplyr)
 # HousePrices <- read.csv('../inst/extdata/HousePrices.csv')
-# HousePrices <- HousePrices %>% 
+# HousePrices <- read.csv('./inst/extdata/HousePrices.csv')
+# HousePrices <- HousePrices %>%
 #   mutate(
 #     Price = Price * 1000,
 #     SqFeet = SqFeet * 1000,
 #     LotSize = factor(LotSize),
 #     NumBaths = floor(NumBaths) + (NumBaths - floor(NumBaths))*5 ) %>%
 #   select( -Status )
-# save(HousePrices, file='../data/HousePrices.rdata')
+# use_data(HousePrices, overwrite=TRUE)

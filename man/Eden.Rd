@@ -22,6 +22,8 @@ adds a primary sampling unit (PSU) and secondary sampling unit (SSU) onto
 the data so that it is suitable for cluster sampling examples.
 }
 \examples{
+library(ggplot2)
+library(dplyr)
 
 # Plot the elevation
 ggplot(Eden, aes(x=x, y=y, fill=elevation)) + 
@@ -41,4 +43,3 @@ ggplot(Eden, aes(x=x, y=y, fill=(PSU-1)\%/\%16)) +
   geom_path(data=Eden.PSU)     
 }
 \keyword{datasets}
-

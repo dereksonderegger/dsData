@@ -11,6 +11,8 @@
 #' }
 #' @examples
 #' data(Ponderosa)
+#' library(ggplot2)
+#' 
 #' ggplot(Ponderosa, aes(x=Age)) +
 #'   geom_histogram(aes(y=..density..)) +
 #'   geom_density(color='red', size=2)

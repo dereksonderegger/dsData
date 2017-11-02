@@ -14,6 +14,7 @@
 #'   \item{Lobster.Length}{Length of lobsters carapace.}
 #' }
 #' @examples
+#' library(ggplot2)
 #' data(Lobsters)
 #' # Plot each boats Catch.Weight 
 #' ggplot(Lobsters, aes(x=Boat.ID, y=Catch.Weight)) + 

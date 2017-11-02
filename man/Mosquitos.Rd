@@ -26,4 +26,3 @@ of communities and record an abundance measurement along with pertinent
 covariates.
 }
 \keyword{datasets}
-

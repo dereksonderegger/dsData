@@ -19,4 +19,3 @@ on the Arkansas River in Colorado, USA. These data were taking from the R
 package SiZer.
 }
 \keyword{datasets}
-

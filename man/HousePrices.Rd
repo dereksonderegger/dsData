@@ -22,4 +22,3 @@ HousePrices
 A set of 76 listings from Eugene OR in 2005.
 }
 \keyword{datasets}
-

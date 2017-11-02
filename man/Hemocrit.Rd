@@ -19,7 +19,7 @@ endurance sports. The amount is typically around 45 for healthy adult males
 and around 40 for healthy adult females.
 }
 \examples{
+library(ggplot2)
 ggplot(Hemocrit, aes(x=hemocrit, y=status)) + geom_point()
 }
 \keyword{datasets}
-

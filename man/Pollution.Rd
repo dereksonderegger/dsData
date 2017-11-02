@@ -19,4 +19,3 @@ A simulated dataset describing the abundance of certain insects
 that are thought to be sensitive to heavy metal pollution.
 }
 \keyword{datasets}
-

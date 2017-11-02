@@ -19,4 +19,3 @@ other day to obtain independece between successive sampling
 events.
 }
 \keyword{datasets}
-

@@ -21,7 +21,9 @@ of visits per week. Information about NAUs student population
 demographics can be found at: http://www4.nau.edu/pair/quickfact.asp
 }
 \examples{
+library(ggplot2)
 data(UUnion)
+
 ggplot(UUnion, aes(x=Year, y=NumPerWeek)) +
   geom_boxplot()
   
@@ -32,4 +34,3 @@ UUnion \%>\% group_by(Year) \%>\%
             sd   = sd(NumPerWeek))
 }
 \keyword{datasets}
-

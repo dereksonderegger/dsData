@@ -12,7 +12,9 @@
 #'   \item{NumPerWeek}{The number of times per week the repondant visits the UU.}
 #' }
 #' @examples
+#' library(ggplot2)
 #' data(UUnion)
+#' 
 #' ggplot(UUnion, aes(x=Year, y=NumPerWeek)) +
 #'   geom_boxplot()
 #'   

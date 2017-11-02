@@ -14,6 +14,8 @@
 #'   \item{SSU}{the secondary sampling unit associated with an observation. These are 1-25 and nested within PSU}
 #' }
 #' @examples
+#' library(ggplot2)
+#' library(dplyr)
 #' 
 #' # Plot the elevation
 #' ggplot(Eden, aes(x=x, y=y, fill=elevation)) + 
@@ -33,7 +35,7 @@
 #'   geom_path(data=Eden.PSU)     
 "Eden"
 
-# library(reshape) 
+# library(reshape)
 # Eden <- melt(volcano, varnames = c('x','y'))
 # colnames(Eden) <- c('x','y','elevation')
 # detach("package:reshape", unload=TRUE)
@@ -41,11 +43,11 @@
 # library(dplyr)
 # 
 # # trim the border and define the PSUs and SSUs
-# Eden2 <- Eden  %>% 
+# Eden2 <- Eden  %>%
 #   filter( x<=80, y<=60 )  %>%       # trim the border
 #   mutate( row.group = cut(x, 4),
 #           col.group = cut(y, 3),
-#           Unit.1 = as.integer(interaction(row.group, col.group)) ) %>%  
+#           Unit.1 = as.integer(interaction(row.group, col.group)) ) %>%
 #   group_by(Unit.1) %>%
 #   mutate( row.group = cut(x, 2),
 #           col.group = cut(y, 2),
@@ -59,17 +61,18 @@
 #   group_by() %>%
 #   mutate( PSU=as.integer(interaction(Unit.3, Unit.2, Unit.1)),
 #           SSU=Unit.4 ) %>%
-#   arrange(PSU)
+#   arrange(PSU) %>%
+#   select( PSU, SSU, elevation, x, y )
 # 
 # # verify the PSUs looks how they should
 # label.data <- Eden2 %>% group_by(Unit.1) %>% summarize(x=mean(x), y=mean(y), label=mean(Unit.1))
-# ggplot(Eden2, aes(x=x, y=y)) + 
-#   geom_tile(aes(fill=elevation)) + 
+# ggplot(Eden2, aes(x=x, y=y)) +
+#   geom_tile(aes(fill=elevation)) +
 #   geom_text( data=label.data, aes(label=label))
 # 
 # label.data <- Eden2 %>% group_by(PSU) %>% summarize(x=mean(x), y=mean(y), label=mean(PSU))
-# ggplot(Eden2, aes(x=x, y=y)) + 
-#   geom_tile(aes(fill=elevation)) + 
+# ggplot(Eden2, aes(x=x, y=y)) +
+#   geom_tile(aes(fill=elevation)) +
 #   geom_text( data=label.data, aes(label=label))
 # 
 # Eden <- as.data.frame(Eden2)

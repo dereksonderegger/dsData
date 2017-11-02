@@ -20,6 +20,8 @@ sampled for age (via tree cores).
 }
 \examples{
 data(Ponderosa)
+library(ggplot2)
+
 ggplot(Ponderosa, aes(x=Age)) +
   geom_histogram(aes(y=..density..)) +
   geom_density(color='red', size=2)
@@ -31,4 +33,3 @@ Ponderosa \%>\% group_by(Plot.ID) \%>\%
              sd   = sd(Age))
 }
 \keyword{datasets}
-

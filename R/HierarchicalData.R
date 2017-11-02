@@ -10,8 +10,8 @@
 #' observations, but the plants are nested within the ring.
 #' @format A data frame with 54 rows and 4 variables:
 #' \describe{
-#'   \item{Trt}{A categorical variable (A,B,C) denoting what treatment was applied.}
 #'   \item{Ring}{A categorical varible (1,...,9) denoting which ring the observation was from.}
+#'   \item{Trt}{A categorical variable (A,B,C) denoting what treatment was applied.}
 #'   \item{Rep}{A number from (1,2,...,6) denoting which replicate within a ring.}
 #'   \item{y}{The response variable.}
 #' }
@@ -26,10 +26,10 @@
 # set.seed(34674)
 # library(dplyr)
 # library(devtools)
-# data <- expand.grid(Trt=c('A','B','C'), Plot=1:3, rep=1:6) %>%
+# data <- expand.grid(Trt=c('A','B','C'), Plot=1:3, Rep=1:6) %>%
 #   mutate( Ring = factor( as.integer(interaction(Plot,Trt))) ) %>%
-#   dplyr::select( Trt, Ring, rep) %>%
-#   arrange(Ring, rep)
+#   dplyr::select( Trt, Ring, Rep) %>%
+#   arrange(Ring, Rep)
 # X <- model.matrix(~ Trt, data)
 # Z <- model.matrix(~ Ring, data)
 # beta    <- c(300, -70, -80)
@@ -37,7 +37,7 @@
 # epsilon <- rnorm( nrow(X), sd=30 )
 # data$y <- as.vector( X%*%beta + Z%*%gamma + epsilon )
 # HierarchicalData <- data
-# use_data(HierarchicalData)
+# use_data(HierarchicalData, overwrite=TRUE)
 # 
 # model <- lmer(y ~ Trt + (1|Ring), data=HierarchicalData)
 # car::Anova(model, type=3)

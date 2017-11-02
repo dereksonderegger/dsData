@@ -31,4 +31,3 @@ was also included. At the end of 6 months of therapy, patients
 rated their observed increase or decrease in pain levels.
 }
 \keyword{datasets}
-

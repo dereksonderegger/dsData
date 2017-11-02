@@ -11,6 +11,7 @@
   \item{Quadrant}{Which 25x25 quadrant the grid cell is in [a-p].}
   \item{Plot}{Which 10x10 plot the grid cell is in [1-100].}
   \item{Site}{A unique identifier of the 1x1 grid cell [1 - 10,000].}
+  \item{count}{The number of plants within a site.}
 }}
 \usage{
 Plant.Pop
@@ -23,8 +24,12 @@ The data is give as the number of individual plants
 in a 1x1 grid cell.
 }
 \examples{
+library(ggplot2)
+library(dplyr)
 data(Plant.Pop)
-ggplot(filter(Plant.Pop, count>=1), aes(x=x, y=y, color=count)) + 
+
+NonZero <- Plant.Pop \%>\% filter( count >= 1 )
+ggplot( NonZero, aes(x=x, y=y, color=count)) + 
   geom_point(alpha=.3)
 
 # Aggregate over quadrants
@@ -48,4 +53,3 @@ ggplot(Plant.Plots, aes(x=x, y=y)) +
   geom_text(aes(label=Plot))  
 }
 \keyword{datasets}
-

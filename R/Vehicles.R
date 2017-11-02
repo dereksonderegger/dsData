@@ -15,6 +15,7 @@
 #'   \item{cyl}{Number of cylinders}
 #'   \item{displ}{Engine Displacement}
 #'   \item{fuel}{Required Fuel Type}
+#'   \item{year}{Model year}
 #'   \item{Efficient}{A binary response indicating if the the model has a higher city MPG than the 2015 median value. A 1 is higher than the median, a 0 is less.}
 #' }
 "vehicles"
