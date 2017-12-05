@@ -14,7 +14,7 @@
 Cats
 }
 \description{
-A simulated dataset describing how my time my cats spend outside
+A simulated dataset describing how my time my cats (Beau, Tess, and Kaylee) spend outside
 relative to the outside temperature.
 }
 \keyword{datasets}

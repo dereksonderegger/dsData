@@ -1,6 +1,6 @@
 #' Cat Behaviors
 #' 
-#' A simulated dataset describing how my time my cats spend outside
+#' A simulated dataset describing how my time my cats (Beau, Tess, and Kaylee) spend outside
 #' relative to the outside temperature.
 #' 
 #' @format A data frame with 60 rows and 3 variables:
