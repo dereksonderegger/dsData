@@ -13,8 +13,13 @@
 University
 }
 \description{
-This dataset is an example of a repeated measures study
-where there are weight measurements every two months on
-six babies from 12 to 36 month.
+This dataset is simulated data that represents a hypothetical study where
+we observe 182 individuals with different socio-economic status but
+similar high school GPAs and SAT scores. We then observe the selectivity of 
+the college they attend and then finally
+their salary 10 years after graduating from college. The hypotheses is that
+all else being equal, attending a highly selective college will matter more
+for children with a low socio-economic status than for children of high
+socio-economic parents.
 }
 \keyword{datasets}
