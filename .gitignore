@@ -36,3 +36,8 @@
 _book/
 _bookdown_files/
 .Rproj.user
+
+# The R directory is just my scripts that I use to generate the
+# data. Because I don't want students to see how I created
+# the data, I'll not upload those to GitHub.
+R/
