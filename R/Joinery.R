@@ -31,11 +31,11 @@
 # set.seed(seed);  set.seed(871467);
 # 
 # #          Int   Box  DT  Pine  Maple  Box:Pine  DT:Pine  Box:Maple  DT:Maple
-# beta <- c(  10,  40,  40,  20,   30,      20,      25,      35,         30 )  
+# beta <- c(  10,  40,  40,  20,   30,      20,      25,      35,         30 )
 # sigma <- 10
 # 
 # Joinery <- expand.grid( Type=c('Butt','Box','DoveTail'),
-#                         Wood=c('Plywood','Pine','Maple'), 
+#                         Wood=c('Plywood','Pine','Maple'),
 #                         rep=1:4 ) %>%
 #     mutate( Ey = model.matrix(~Type*Wood, data=.) %*% beta %>% as.vector() ) %>%
 #     mutate( Force = Ey + rnorm(n(), sd=sigma) ) %>%
@@ -45,6 +45,9 @@
 # ggplot(Joinery, aes(x=Type, y=Force, color=Wood)) +
 #   geom_point()
 # 
+# Joinery <- Joinery %>%
+#   select(Type, Wood, Force)
+# 
 # use_data(Joinery, overwrite=TRUE)
-
+# 
 
