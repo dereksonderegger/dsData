@@ -4,13 +4,15 @@
 \name{AgData}
 \alias{AgData}
 \title{Simulated Agriculure Study}
-\format{A data.frame with 96 observations
+\format{
+A data.frame with 96 observations
 \describe{
     \item{plot}{Which plot the observation comes from}
     \item{subplot}{Which subplot the observation comes from}
     \item{rep}{The replicate number within subplot}
     \item{Irrigation}{The irrigation level of the plot}
-    \item{Fertilizer}{The fertilizer level of the subplot}}}
+    \item{Fertilizer}{The fertilizer level of the subplot}}
+}
 \usage{
 AgData
 }

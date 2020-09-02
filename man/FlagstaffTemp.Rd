@@ -4,14 +4,16 @@
 \name{FlagstaffTemp}
 \alias{FlagstaffTemp}
 \title{Daily maximum termperature in Flagstaff, AZ}
-\format{A data frame with 5 variables:
+\format{
+A data frame with 5 variables:
 \describe{
   \item{Date}{The date of the observation.}
   \item{Year}{Year of the observation.}
   \item{Month}{Month of the observation.}
   \item{Day}{Day of month of the observation.}
   \item{MaxTemp}{Daily maximum temperature (in degrees Farenheit).}
-}}
+}
+}
 \usage{
 FlagstaffTemp
 }

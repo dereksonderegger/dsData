@@ -5,7 +5,8 @@
 \alias{CommunitySurvey}
 \title{A simulated survey of comparing the species make-up of two different
 ecological communities.}
-\format{A data frame with 34 rows and 6 variables:
+\format{
+A data frame with 34 rows and 6 variables:
 \describe{
   \item{Community}{A factor denoting what community type the observation came from}
   \item{A}{The number species A observed.}
@@ -13,7 +14,8 @@ ecological communities.}
   \item{C}{The number species C observed.}
   \item{D}{The number species D observed.}
   \item{E}{The number species E observed.}
-}}
+}
+}
 \usage{
 CommunitySurvey
 }

@@ -4,12 +4,14 @@
 \name{LichenGrowth}
 \alias{LichenGrowth}
 \title{Simulated Lichen Growth}
-\format{A data frame with 60 rows and 3 variables:
+\format{
+A data frame with 60 rows and 3 variables:
 \describe{
   \item{Species}{Lichen Species}
   \item{Water}{A normalized measure of water availability (bigger is more water)}
   \item{Growth}{A measure of how much growth occured (bigger is more growth)}
-}}
+}
+}
 \usage{
 LichenGrowth
 }

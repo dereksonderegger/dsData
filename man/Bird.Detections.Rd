@@ -4,8 +4,10 @@
 \name{Bird.Detections}
 \alias{Bird.Detections}
 \title{Bird Dectections - Simulated Occupancy data}
-\format{A matrix with 40 rows (sites) and 5 columns (observation
-periods).}
+\format{
+A matrix with 40 rows (sites) and 5 columns (observation
+periods).
+}
 \usage{
 Bird.Detections
 }

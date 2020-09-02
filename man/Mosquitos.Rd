@@ -4,14 +4,16 @@
 \name{Mosquitos}
 \alias{Mosquitos}
 \title{Simulated data on Mosquito Abundance}
-\format{A data frame with 50 rows and 5 variables:
+\format{
+A data frame with 50 rows and 5 variables:
 \describe{
   \item{Abundance}{A measure of mosquito abundance.} 
   \item{MaxSummerTemp}{Maximum Summer Temperature (Farenheit).}
   \item{AnnualPrecip}{Annual Precipitation (in inches).}
   \item{MedianIncome}{Household Median Income.}
   \item{Population}{Human population size of the community.}
-}}
+}
+}
 \usage{
 Mosquitos
 }

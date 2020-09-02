@@ -4,14 +4,16 @@
 \name{BackPain}
 \alias{BackPain}
 \title{Simulated data on the treatment of back pain}
-\format{A data frame with 72 rows and 3 variables:
+\format{
+A data frame with 72 rows and 3 variables:
 \describe{
   \item{Electro}{The medical treatment: either None, Low, or High, where None
   is corresponds to no therapy.} 
   \item{Lifestyle}{Change in Lifestyle: either Passive, PT, or Str. These 
   correspond to no change, Physical Therapy, or Strength training.}
   \item{delta}{The reported change in chronic pain.}
-}}
+}
+}
 \usage{
 BackPain
 }

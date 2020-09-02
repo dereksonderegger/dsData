@@ -4,14 +4,16 @@
 \name{Eden}
 \alias{Eden}
 \title{An elevation map of Maunga Whau (Mt Eden).}
-\format{A data frame with 4800 rows and 5 variables:
+\format{
+A data frame with 4800 rows and 5 variables:
 \describe{
   \item{x}{the x coordinate}
   \item{y}{the y coordinate}
   \item{elevation}{the elevation (in meters)}
   \item{PSU}{the primary sampling unit associated with an observation}
   \item{SSU}{the secondary sampling unit associated with an observation. These are 1-25 and nested within PSU}
-}}
+}
+}
 \usage{
 Eden
 }

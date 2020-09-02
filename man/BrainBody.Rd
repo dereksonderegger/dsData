@@ -4,7 +4,8 @@
 \name{BrainBody}
 \alias{BrainBody}
 \title{Brain vs Body Size}
-\format{A data frame with 76 rows and 9 variables:
+\format{
+A data frame with 76 rows and 9 variables:
 \describe{
   \item{Species}{Species Name}
   \item{Brain}{Average brain weight (g)}
@@ -12,7 +13,8 @@
   \item{Gestation}{Average gestation length (days)}
   \item{Litter}{Average litter size}
   \item{LitterSize}{Discritized litter size }
-}}
+}
+}
 \usage{
 BrainBody
 }

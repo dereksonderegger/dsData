@@ -4,11 +4,13 @@
 \name{Oysters}
 \alias{Oysters}
 \title{A simulated dataset of oyster catch}
-\format{A data frame with 21 rows and 2 variables:
+\format{
+A data frame with 21 rows and 2 variables:
 \describe{
   \item{Density}{Number of boat passes through the oyster bed.}
   \item{Harvest}{The number of bushels of oysters harvested.}
-}}
+}
+}
 \usage{
 Oysters
 }

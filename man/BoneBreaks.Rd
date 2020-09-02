@@ -5,12 +5,14 @@
 \alias{BoneBreaks}
 \title{A simulated dataset relating the age of the patient 
 and severity of a bone break with duration of the healing time.}
-\format{A data frame with 60 observations on the following 3 variables.
+\format{
+A data frame with 60 observations on the following 3 variables.
 \describe{
   \item{Age}{The age froup of the patient. Either young or old.}
   \item{FracLength}{The length of the fracture (in cm).}
   \item{Duration}{The duration of healing (in weeks).}
-}}
+}
+}
 \usage{
 BoneBreaks
 }

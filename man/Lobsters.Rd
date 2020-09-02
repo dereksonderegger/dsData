@@ -4,13 +4,15 @@
 \name{Lobsters}
 \alias{Lobsters}
 \title{A simulated dataset of lobster captures}
-\format{A data frame with 240 rows and 4 variables:
+\format{
+A data frame with 240 rows and 4 variables:
 \describe{
   \item{Boat.ID}{A variable denoting which boat.}
   \item{Catch.Weight}{The weight of all lobsters caught (by boat, in thousands of pounds).}
   \item{Lobster.ID}{A variable indicating which lobster.}
   \item{Lobster.Length}{Length of lobsters carapace.}
-}}
+}
+}
 \usage{
 Lobsters
 }

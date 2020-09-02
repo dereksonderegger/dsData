@@ -4,11 +4,13 @@
 \name{Ponderosa}
 \alias{Ponderosa}
 \title{A simulated forestry survey}
-\format{A data frame with 227 rows and 2 variables:
+\format{
+A data frame with 227 rows and 2 variables:
 \describe{
   \item{Plot.ID}{A variable denoting which Plot the observation came from}
   \item{Age}{Age of the observed tree.}
-}}
+}
+}
 \usage{
 Ponderosa
 }

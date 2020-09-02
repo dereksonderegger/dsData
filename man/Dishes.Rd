@@ -4,13 +4,15 @@
 \name{Dishes}
 \alias{Dishes}
 \title{Manufacturing data on how long it takes to polish a dish}
-\format{A data frame with 58 rows and 4 variables:
+\format{
+A data frame with 58 rows and 4 variables:
 \describe{
   \item{Diameter}{The diameter of the dish.}
   \item{Time}{The amount of time necessary to polish the dish.}
   \item{Price}{How much the dish will sell for.}
   \item{Type}{The type of dish: Casserole, Bowl, Dish, Tray, or Plate}
-}}
+}
+}
 \usage{
 Dishes
 }

@@ -4,7 +4,8 @@
 \name{vehicles}
 \alias{vehicles}
 \title{Automobile fuel economy data from the EPA for the 2015 model year.}
-\format{A data frame with :
+\format{
+A data frame with :
 \describe{
   \item{make}{Manufacturer}
   \item{model}{Model name}
@@ -15,7 +16,8 @@
   \item{fuel}{Required Fuel Type}
   \item{year}{Model year}
   \item{Efficient}{A binary response indicating if the the model has a higher city MPG than the 2015 median value. A 1 is higher than the median, a 0 is less.}
-}}
+}
+}
 \usage{
 vehicles
 }

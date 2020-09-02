@@ -4,12 +4,14 @@
 \name{Cats}
 \alias{Cats}
 \title{Cat Behaviors}
-\format{A data frame with 60 rows and 3 variables:
+\format{
+A data frame with 60 rows and 3 variables:
 \describe{
   \item{Temperature}{Outside temperature (in Celcius).}
   \item{Time}{The amount of time spent outside (in minutes).}
   \item{Cat}{A categorical variable denoting which cat was outside.}
-  }}
+  }
+}
 \usage{
 Cats
 }

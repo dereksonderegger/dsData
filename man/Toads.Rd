@@ -4,12 +4,14 @@
 \name{Toads}
 \alias{Toads}
 \title{A simulated dataset of the presence/absense of boreal toads.}
-\format{A data frame with 200 observations of 4 variables.
+\format{
+A data frame with 200 observations of 4 variables.
 \describe{
   \item{Occupancy}{A zero or 1 where a 1 denotes that the site was occupied by toads.}
   \item{Elevation}{The site elevation (in feet).}
   \item{Shore.Veg}{A factor with three levels (Low, Medium, High)}
-  \item{Depth}{The maximum depth of the water source (in feet).}}}
+  \item{Depth}{The maximum depth of the water source (in feet).}}
+}
 \usage{
 Toads
 }

@@ -4,7 +4,8 @@
 \name{Plant.Pop}
 \alias{Plant.Pop}
 \title{A simulated dataset of a population of plants.}
-\format{A data frame with 10,000 rows and 6 variables:
+\format{
+A data frame with 10,000 rows and 6 variables:
 \describe{
   \item{x}{The x coordinate of a 1x1 grid cell.}
   \item{y}{The y coordinate of a 1x1 grid cell.}
@@ -12,7 +13,8 @@
   \item{Plot}{Which 10x10 plot the grid cell is in [1-100].}
   \item{Site}{A unique identifier of the 1x1 grid cell [1 - 10,000].}
   \item{count}{The number of plants within a site.}
-}}
+}
+}
 \usage{
 Plant.Pop
 }

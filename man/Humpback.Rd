@@ -4,7 +4,9 @@
 \name{Humpback}
 \alias{Humpback}
 \title{Simulated distance sampling of whales.}
-\format{An object of class \code{data.frame} with 36 rows and 2 columns.}
+\format{
+An object of class \code{data.frame} with 36 rows and 2 columns.
+}
 \usage{
 Humpback
 }

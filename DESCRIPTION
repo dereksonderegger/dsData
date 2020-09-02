@@ -9,4 +9,4 @@ Suggests:
     dplyr, ggplot2, tidyverse, vegan
 License: GPL-3
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.1

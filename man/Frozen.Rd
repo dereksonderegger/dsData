@@ -4,7 +4,9 @@
 \name{Frozen}
 \alias{Frozen}
 \title{Simulated data on treatment of frozen shoulder.}
-\format{An object of class \code{data.frame} with 45 rows and 3 columns.}
+\format{
+An object of class \code{data.frame} with 45 rows and 3 columns.
+}
 \usage{
 Frozen
 }

@@ -4,10 +4,12 @@
 \name{Hemocrit}
 \alias{Hemocrit}
 \title{Hemocrit levels}
-\format{A data frame with 200 observations, with two columns 
+\format{
+A data frame with 200 observations, with two columns 
 \describe{
    \item{hemocrit}{The riders hemocrit level.}
-   \item{status}{Whether the rider was "clean" or a "cheater".}}}
+   \item{status}{Whether the rider was "clean" or a "cheater".}}
+}
 \usage{
 Hemocrit
 }

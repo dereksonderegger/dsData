@@ -4,13 +4,15 @@
 \name{HierarchicalData}
 \alias{HierarchicalData}
 \title{A simulated hierarchical analysis}
-\format{A data frame with 54 rows and 4 variables:
+\format{
+A data frame with 54 rows and 4 variables:
 \describe{
   \item{Ring}{A categorical varible (1,...,9) denoting which ring the observation was from.}
   \item{Trt}{A categorical variable (A,B,C) denoting what treatment was applied.}
   \item{Rep}{A number from (1,2,...,6) denoting which replicate within a ring.}
   \item{y}{The response variable.}
-}}
+}
+}
 \usage{
 HierarchicalData
 }

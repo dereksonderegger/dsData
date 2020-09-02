@@ -4,12 +4,14 @@
 \name{Zombies}
 \alias{Zombies}
 \title{A simulated dataset about zombies solving a maze.}
-\format{A data frame with 39 observations of 4 variables.
+\format{
+A data frame with 39 observations of 4 variables.
 \describe{
   \item{Zombie_ID}{A unique identifier for each zombie.}
   \item{Sex}{A factor describing the sex, Male or Female.}
   \item{Age}{The number of days since the zombie was first infected.}
-  \item{Time}{The amount of time in the maze.}}}
+  \item{Time}{The amount of time in the maze.}}
+}
 \usage{
 Zombies
 }

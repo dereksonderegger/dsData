@@ -4,11 +4,13 @@
 \name{Babies}
 \alias{Babies}
 \title{Simulated data set of baby growth}
-\format{a data frame with 78 observations 
+\format{
+a data frame with 78 observations 
 \describe{
   \item{Age}{The age in months the observation was made at.}
   \item{Baby}{A number identifying which baby the observation was on.}
-  \item{Weight}{The weight (in pounds) of the baby.}}}
+  \item{Weight}{The weight (in pounds) of the baby.}}
+}
 \usage{
 Babies
 }

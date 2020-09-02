@@ -4,7 +4,8 @@
 \name{PocketHoles}
 \alias{PocketHoles}
 \title{Testing Wood Joinery Methods}
-\format{A data frame with 16 observations of 2 variables.
+\format{
+A data frame with 16 observations of 2 variables.
 \describe{
   \item{Type}{A factor describing the joint type.}
   \item{Force}{The force required to break the joint (in pounds).}
@@ -18,7 +19,8 @@ three or four.
 The joinery types are using pocket holes with 2 screws, 
 a dowel joint with two dowels (using Titebond 3). The mortise and 
 tenon joints were created using three different types of adhesive:
-yellow glue, Titebond 3, or epoxy.}
+yellow glue, Titebond 3, or epoxy.
+}
 \usage{
 PocketHoles
 }

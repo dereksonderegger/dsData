@@ -4,11 +4,13 @@
 \name{University}
 \alias{University}
 \title{Simulated data set of baby growth}
-\format{a data frame with 182 observations 
+\format{
+a data frame with 182 observations 
 \describe{
   \item{Socio}{The socio-economic background the individual was raised in (Low, Medium, High).}
   \item{Selectivity}{The selectivity of the college the person attended. (Medium, High)}
-  \item{Income}{The individuals yearly income, 10 years out of college.}}}
+  \item{Income}{The individuals yearly income, 10 years out of college.}}
+}
 \usage{
 University
 }

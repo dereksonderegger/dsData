@@ -4,12 +4,14 @@
 \name{BeeDrink}
 \alias{BeeDrink}
 \title{Drinking energetics of honeybees.}
-\format{A data frame with 24 rows and 3 variables:
+\format{
+A data frame with 24 rows and 3 variables:
 \describe{
   \item{temp}{Temperature (in Celcius).}
   \item{sucrose}{Percent sucrose of the liquid where higher sucrose levels correspond to higher viscosity.}
   \item{energy}{The energy expended during drinking as joules/second.}
-}}
+}
+}
 \usage{
 BeeDrink
 }

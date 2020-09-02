@@ -4,11 +4,13 @@
 \name{UUnion}
 \alias{UUnion}
 \title{A simulated survey given to NAU students.}
-\format{A data frame with 1100 rows and 2 variables:
+\format{
+A data frame with 1100 rows and 2 variables:
 \describe{
   \item{Year}{A factor denoting what year in school the respondant is.}
   \item{NumPerWeek}{The number of times per week the repondant visits the UU.}
-}}
+}
+}
 \usage{
 UUnion
 }

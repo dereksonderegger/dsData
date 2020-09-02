@@ -4,11 +4,13 @@
 \name{Arkansas}
 \alias{Arkansas}
 \title{Time Series of Macroinvertabrates Abundance in the Arkansas River.}
-\format{A data frame with 90 observations on the following 2 variables.
+\format{
+A data frame with 90 observations on the following 2 variables.
 \describe{
   \item{year}{The year of observation}
   \item{sqrt.abundance}{The Square root of observed abundance.}
-}}
+}
+}
 \usage{
 Arkansas
 }

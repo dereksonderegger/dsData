@@ -4,7 +4,8 @@
 \name{HousePrices}
 \alias{HousePrices}
 \title{Housing data from 2005}
-\format{A data frame with 76 rows and 9 variables:
+\format{
+A data frame with 76 rows and 9 variables:
 \describe{
   \item{Price}{Price of the home}
   \item{SqFeet}{Floor size}
@@ -14,7 +15,8 @@
   \item{YearBuilt}{Year the house was built}
   \item{GarageSize}{Number of cars (0 is no garage)}
   \item{Elementary}{Nearest elementary school}
-}}
+}
+}
 \usage{
 HousePrices
 }

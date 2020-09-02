@@ -4,10 +4,12 @@
 \name{Mayflies}
 \alias{Mayflies}
 \title{Mayfly Abundance}
-\format{A data frame with 30 observations, with two columns 
+\format{
+A data frame with 30 observations, with two columns 
 \describe{
    \item{CCU}{Heavy metal pollution index (higher is more pollution).}
-   \item{Occupancy}{Whether Mayflies were present at the site.}}}
+   \item{Occupancy}{Whether Mayflies were present at the site.}}
+}
 \usage{
 Mayflies
 }

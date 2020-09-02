@@ -4,13 +4,15 @@
 \name{PlantNutrients}
 \alias{PlantNutrients}
 \title{A simulated study the effects of soil nutrients on harvest levels}
-\format{A data frame with 50 rows and 4 variables:
+\format{
+A data frame with 50 rows and 4 variables:
 \describe{
   \item{Harvest}{The number of bushels harvested for the plot}
   \item{N}{Nitrogen concentration (in ppm)}
   \item{P}{Phosporus concentration (in ppm)}
   \item{K}{Potassium concentration (in ppm)}
-}}
+}
+}
 \usage{
 PlantNutrients
 }

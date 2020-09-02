@@ -4,11 +4,14 @@
 \name{Joinery}
 \alias{Joinery}
 \title{Testing Cabinet Drawer Joinery Methods (Simulated Data!)}
-\format{A data frame with 16 observations of 2 variables.
+\format{
+A data frame with 36 observations of 3 variables.
 \describe{
+  \item{Wood}{A factor describing the wood type (Plywood, Pine, Maple)}.
   \item{Type}{A factor describing the joint type.}
   \item{Force}{The force required to break the joint (in pounds).}
-  }}
+  }
+}
 \usage{
 Joinery
 }
@@ -27,6 +30,6 @@ butt-joints will be poor, but it isn't clear how well the other joint types
 will compare when using plywood vs natural woods.
 }
 \examples{
-ggplot2::ggplot(PocketHoles, aes(x=Type, y=Force)) + geom_point()
+ggplot2::ggplot(Joinery, aes(x=Wood, y=Force, color=Type)) + geom_point()
 }
 \keyword{datasets}
