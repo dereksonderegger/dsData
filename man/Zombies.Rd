@@ -10,7 +10,7 @@ A data frame with 39 observations of 4 variables.
   \item{Zombie_ID}{A unique identifier for each zombie.}
   \item{Sex}{A factor describing the sex, Male or Female.}
   \item{Age}{The number of days since the zombie was first infected.}
-  \item{Time}{The amount of time in the maze.}}
+  \item{Time}{The amount of time in the maze (in seconds).}}
 }
 \usage{
 Zombies
@@ -18,7 +18,7 @@ Zombies
 \description{
 This simulated dataset imagines a study where captured zombies are presented
 with a maze with the researchers goal to measure the zombies remaining intelligence. 
-We imagine that foreach zombie, we know the time since infection as well as the 
+We imagine that for each zombie, we know the time since infection as well as the 
 zombies sex.
 }
 \details{
