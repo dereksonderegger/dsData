@@ -1,6 +1,6 @@
 Package: dsData
 Title: Datasets for Teaching
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: "Derek Sonderegger <derek.sonderegger@nau.edu> [aut, cre]"
 Description: These are a collection of data sets used for homework and exams.
 Depends:
